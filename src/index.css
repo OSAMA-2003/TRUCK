@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3d0006;
+  --color-primary-container: #5d1016;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #e27675;
+  --color-primary-fixed-dim: #ffb3b1;
+  --color-primary-fixed: #ffdad8;
+
+  --color-secondary: #735c00;
+  --color-secondary-container: #fed65b;
+  --color-secondary-fixed: #ffe088;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #745c00;
+
+  --color-tertiary: #1d1a09;
+  --color-tertiary-container: #322e1c;
+
+  --color-surface: #fcf9f8;
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-container: #f0eded;
+  --color-surface-container-high: #eae7e7;
+  --color-surface-container-highest: #e5e2e1;
+
+  --color-on-surface: #1c1b1b;
+  --color-on-surface-variant: #554241;
+  --color-outline: #887271;
+  --color-outline-variant: #dbc0bf;
+
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-hanken: 'Hanken Grotesk', sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-hanken);
+    background-color: var(--color-surface-container-low);
+    color: var(--color-on-surface);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-montserrat);
+  }
+
+  .font-accent {
+    font-family: var(--font-playfair);
+  }
+}
+
+/* Custom Utilities for smooth transitions and scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fcf9f8;
+}
+::-webkit-scrollbar-thumb {
+  background: #5d1016;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #735c00;
+}
