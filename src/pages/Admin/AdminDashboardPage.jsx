@@ -60,7 +60,7 @@ export default function AdminDashboardPage({ products, gallery }) {
           </div>
           <div>
             <span className="font-montserrat font-bold text-xs text-[#887271] uppercase">Average Price</span>
-            <p className="font-montserrat font-black text-3xl text-[#3d0006]">${avgPrice}</p>
+            <p className="font-montserrat font-black text-3xl text-[#3d0006]">{avgPrice} EGP</p>
           </div>
         </div>
       </div>

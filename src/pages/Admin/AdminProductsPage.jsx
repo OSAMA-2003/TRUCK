@@ -109,8 +109,8 @@ export default function AdminProductsPage({ products, categories = ['Coffee', 'B
 
               <div className="flex justify-between items-start mb-2">
                 <h3 className="font-montserrat font-black text-xl text-[#3d0006]">{p.name}</h3>
-                <span className="font-playfair font-bold text-xl text-[#735c00]">
-                  ${Number(p.price).toFixed(2)}
+                <span className="font-playfair font-bold text-lg text-[#735c00]">
+                  {Number(p.price).toFixed(2)} EGP
                 </span>
               </div>
 

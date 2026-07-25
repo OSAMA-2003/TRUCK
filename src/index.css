@@ -41,7 +41,10 @@
     overflow-x: hidden;
   }
 
-  h1, h2, h3, .font-display {
+  h1,
+  h2,
+  h3,
+  .font-display {
     font-family: var(--font-montserrat);
   }
 
@@ -54,13 +57,21 @@
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #fcf9f8;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #5d1016;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #735c00;
+}
+
+
+button {
+  cursor: pointer;
 }

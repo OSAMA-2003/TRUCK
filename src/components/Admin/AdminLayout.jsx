@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, Outlet, Navigate, Link } from 'react-router-dom';
-import { 
-  LayoutDashboard, ShoppingBag, PlusCircle, Image as ImageIcon, 
+import {
+  LayoutDashboard, ShoppingBag, PlusCircle, Image as ImageIcon,
   LogOut, Store, Database, UserCheck, Tag
 } from 'lucide-react';
 import { isSupabaseConfigured } from '../../lib/supabaseClient';
@@ -22,21 +22,21 @@ export default function AdminLayout({ adminUser, onLogout }) {
 
   return (
     <div className="min-h-screen bg-[#fcf9f8] text-[#1c1b1b] flex flex-col md:flex-row">
-      
+
       {/* Sidebar */}
       <aside className="w-full md:w-64 bg-[#3d0006] text-white flex flex-col justify-between shrink-0 p-6 shadow-2xl border-r border-[#fed65b]/20">
         <div className="space-y-8">
-          
+
           {/* Brand Logo */}
           <div className="flex items-center gap-3">
             <img
               src={truckLogo}
               alt="TRUCK Logo"
-              className="w-10 h-10 rounded-full object-cover border-2 border-[#fed65b] shadow-md"
+              className="w-20 object-contain "
             />
             <div>
-              <h2 className="font-montserrat font-black text-xl text-[#ffe088] tracking-tight">TRUCK ADMIN</h2>
-              <span className="font-hanken text-[10px] text-[#ffb3b1] block">Management Panel</span>
+              <h2 className=" font-black text-xl text-[#ffe088] "> ADMIN</h2>
+
             </div>
           </div>
 
@@ -63,10 +63,9 @@ export default function AdminLayout({ adminUser, onLogout }) {
                   to={item.path}
                   end={item.path === '/admin'}
                   className={({ isActive }) =>
-                    `flex items-center gap-3 px-4 py-3 rounded-2xl font-montserrat font-bold text-xs tracking-wider transition-all ${
-                      isActive
-                        ? 'bg-[#fed65b] text-[#3d0006] shadow-md shadow-[#fed65b]/20'
-                        : 'text-[#ffb3b1] hover:bg-white/10 hover:text-white'
+                    `flex items-center gap-3 px-4 py-3 rounded-2xl font-montserrat font-bold text-xs tracking-wider transition-all ${isActive
+                      ? 'bg-[#fed65b] text-[#3d0006] shadow-md shadow-[#fed65b]/20'
+                      : 'text-[#ffb3b1] hover:bg-white/10 hover:text-white'
                     }`
                   }
                 >

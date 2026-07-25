@@ -61,6 +61,11 @@ function AppContent() {
   const location = useLocation();
   const isAdminRoute = location.pathname.startsWith('/admin');
 
+  // Scroll to top 0 on every route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   // Load initial data & session
   useEffect(() => {
     async function loadData() {

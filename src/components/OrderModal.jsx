@@ -17,10 +17,10 @@ export default function OrderModal({ isOpen, onClose, cartItems, onUpdateQuantit
     text += `*Order Items:*\n`;
 
     cartItems.forEach(item => {
-      text += `• ${item.name} (${item.quantity}x) - $${(Number(item.price) * item.quantity).toFixed(2)}\n`;
+      text += `• ${item.name} (${item.quantity}x) - ${(Number(item.price) * item.quantity).toFixed(2)} EGP\n`;
     });
 
-    text += `\n*Total:* $${total.toFixed(2)}`;
+    text += `\n*Total:* ${total.toFixed(2)} EGP`;
     if (orderNotes) text += `\n*Notes:* ${orderNotes}`;
     text += `\n*Delivery/Pickup Location:* شارع القاعات امام الشيخ رجب`;
 
@@ -79,7 +79,7 @@ export default function OrderModal({ isOpen, onClose, cartItems, onUpdateQuantit
                       <div>
                         <h4 className="font-montserrat font-bold text-sm text-[#3d0006]">{item.name}</h4>
                         <span className="font-playfair font-bold text-xs text-[#735c00]">
-                          ${Number(item.price).toFixed(2)}
+                          {Number(item.price).toFixed(2)} EGP
                         </span>
                       </div>
                     </div>
@@ -151,7 +151,7 @@ export default function OrderModal({ isOpen, onClose, cartItems, onUpdateQuantit
             <div className="flex justify-between items-center">
               <span className="font-montserrat font-bold text-sm text-[#887271]">TOTAL:</span>
               <span className="font-playfair font-black text-2xl text-[#3d0006]">
-                ${total.toFixed(2)}
+                {total.toFixed(2)} EGP
               </span>
             </div>
 

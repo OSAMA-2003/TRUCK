@@ -149,7 +149,7 @@ export default function MenuHighlights({ products, onAddToCart, activeCategory, 
 
                   {/* Content */}
                   <div className="p-6 pb-2 space-y-2">
-                    <h3 className="font-montserrat font-black text-2xl sm:text-3xl text-white group-hover:text-[#ffe088] transition-colors tracking-tight line-clamp-1">
+                    <h3 className="font-montserrat font-black text-2xl  text-white group-hover:text-[#ffe088] transition-colors tracking-tight ">
                       {item.name}
                     </h3>
 

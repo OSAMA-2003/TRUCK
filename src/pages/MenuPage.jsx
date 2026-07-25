@@ -79,7 +79,7 @@ export default function MenuPage({ products, categories = ['Coffee', 'Boba Tea',
                 : 'text-[#ffe088] hover:text-white hover:bg-white/10'
                 }`}
             >
-              {cat === 'All' ? 'ALL / الكل' : cat.toUpperCase()}
+              {cat === 'All' ? 'ALL ' : cat.toUpperCase()}
             </button>
           ))}
         </div>
@@ -119,8 +119,8 @@ export default function MenuPage({ products, categories = ['Coffee', 'Boba Tea',
 
               {/* Compact Price & Add button bar */}
               <div className="flex items-center justify-between pt-2 border-t border-white/10 mt-auto">
-                <span className="font-montserrat font-black text-sm sm:text-base text-[#ffe088]">
-                  ${Number(item.price).toFixed(2)}
+                <span className="font-montserrat font-black text-xs sm:text-sm text-[#ffe088]">
+                  {Number(item.price).toFixed(2)} EGP
                 </span>
                 <button
                   onClick={() => handleAdd(item)}
