@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Coffee, Image as ImageIcon, Sparkles, Plus, ArrowRight, DollarSign } from 'lucide-react';
+import { Coffee, Image as ImageIcon, Sparkles, Plus, ArrowRight, Tag } from 'lucide-react';
 
-export default function AdminDashboardPage({ products, gallery }) {
-  const avgPrice = products.length > 0
-    ? (products.reduce((acc, p) => acc + Number(p.price), 0) / products.length).toFixed(2)
-    : '0.00';
+export default function AdminDashboardPage({ products = [], gallery = [], categories = [] }) {
+  const totalCategories = categories.length > 0
+    ? categories.length
+    : new Set(products.map((p) => p.category)).size;
 
   return (
     <div className="space-y-8 animate-in fade-in duration-200">
@@ -56,11 +56,11 @@ export default function AdminDashboardPage({ products, gallery }) {
 
         <div className="bg-[#f0eded] p-6 rounded-3xl border border-[#e5e2e1] shadow-sm flex items-center gap-4">
           <div className="w-14 h-14 rounded-2xl bg-[#322e1c] text-[#ffe088] flex items-center justify-center font-bold">
-            <DollarSign className="w-7 h-7" />
+            <Tag className="w-7 h-7" />
           </div>
           <div>
-            <span className="font-montserrat font-bold text-xs text-[#887271] uppercase">Average Price</span>
-            <p className="font-montserrat font-black text-3xl text-[#3d0006]">{avgPrice} EGP</p>
+            <span className="font-montserrat font-bold text-xs text-[#887271] uppercase">Total Categories</span>
+            <p className="font-montserrat font-black text-3xl text-[#3d0006]">{totalCategories}</p>
           </div>
         </div>
       </div>

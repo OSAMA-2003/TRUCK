@@ -227,7 +227,7 @@ function AppContent() {
             />
           }
         >
-          <Route index element={<AdminDashboardPage products={products} gallery={gallery} />} />
+          <Route index element={<AdminDashboardPage products={products} gallery={gallery} categories={categories} />} />
           <Route
             path="products"
             element={
