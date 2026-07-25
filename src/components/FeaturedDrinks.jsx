@@ -1,5 +1,8 @@
 import React from 'react';
 import { ArrowRight, Sparkles, Flame, Snowflake } from 'lucide-react';
+import f1 from '../assets/f1.jpg';
+import f2 from '../assets/f2.jpg';
+import f3 from '../assets/f3.jpg';
 
 export default function FeaturedDrinks({ onSelectCategory }) {
   return (
@@ -40,7 +43,7 @@ export default function FeaturedDrinks({ onSelectCategory }) {
             <div className="absolute inset-0 bg-[#3d0006] translate-x-3 translate-y-3 rounded-3xl transition-transform group-hover:translate-x-5 group-hover:translate-y-5"></div>
             <div className="relative bg-[#f6f3f2] rounded-3xl overflow-hidden shadow-2xl h-[480px] flex flex-col justify-end p-8 border border-[#e5e2e1]">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6N8kLv0xHDnb4N34WgxXzo-f_cv-VU09vf2XXHfd-J086kKGgb3Nmp2LR8W442Ff5CdRtgmPprPh01Oy548Z0zh0NF2BXHX0mfauDchuk53wiFW01iXaZdlNnCICHg09eB4o0rza8h8B49yL07H0rGmTsdzFMFaduqbhQ9HNtbP8np31LUiww57rb1kl6Qsz9TGuQNShNSveQ7oLtVn2zMN8mQGL9m6eC1G7LtETehP7t9ekyZl-Qdml2EHqtOxYe5XJfm-02dI-v"
+                src={f1}
                 alt="Colorful Signature Boba Tea"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 mix-blend-multiply"
               />
@@ -68,7 +71,7 @@ export default function FeaturedDrinks({ onSelectCategory }) {
             <div className="absolute inset-0 bg-[#735c00] translate-x-3 translate-y-3 rounded-3xl transition-transform group-hover:translate-x-5 group-hover:translate-y-5"></div>
             <div className="relative bg-[#f6f3f2] rounded-3xl overflow-hidden shadow-2xl h-[480px] flex flex-col justify-between p-8 border border-[#e5e2e1]">
               <img
-                src='https://scontent.fcai21-2.fna.fbcdn.net/v/t39.30808-6/748597576_122118293493357843_2518584682834826250_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=t_mjCBIiOR8Q7kNvwFSDPTi&_nc_oc=AdootjDfYQTBaxTm0_5RMK-cxuWN0mbtYNH4XQwPfMMvcVROEBrQMqjS44XS7aczI6c&_nc_zt=23&_nc_ht=scontent.fcai21-2.fna&_nc_gid=T9LzP0ORJJYHSLSVSP5WCg&_nc_ss=7b2a8&oh=00_AQDA869FhLsFJYaXqt73ARS0Z5i5rOzS9DgVCKAqty9abQ&oe=6A699244'
+                src={f2}
                 alt="Refreshing Ice Mojitos"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 mix-blend-multiply"
               />
@@ -97,7 +100,7 @@ export default function FeaturedDrinks({ onSelectCategory }) {
             <div className="relative bg-[#fcf9f8] rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row border border-[#e5e2e1]">
               <div className="md:w-1/2 h-[320px] md:h-auto relative">
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVjZJUm5X0FlHlotH-vGh7ONbnNs0UFyTjPo_zXSbWr8Ya1NFyON0yuHmH2dMapGzs_-xYRhbgo2iX6i-HgehXDJ6Es2RbEF2nqvWwAExM-aKgQYluDMTDanc32PbyCav28TssOWgdzHqYMqM-iAJ2uaV2LXTN8KsSuhkiKBDGSbB6R3CWxHc5tyHjkKGxqg8mmEoGb0FHgrezt1iyfn4tGBzbzJK9C5Xry-qsbQ5VWYSetVS-nteS99ZdHnmaS2TYm5QsZqar0skN"
+                  src={f3}
                   alt="Spilled roasted coffee newspaper art"
                   className="absolute inset-0 w-full h-full object-cover mix-blend-multiply"
                 />

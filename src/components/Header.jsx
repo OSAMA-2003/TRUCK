@@ -80,8 +80,7 @@ export default function Header({ onOpenOrderModal, cartCount }) {
           {/* Mobile Hamburger Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className={`md:hidden p-2 rounded-full transition-colors text-white hover:bg-white/10'
-              }`}
+            className={`md:hidden p-2 rounded-full transition-colors text-white hover:bg-white/10' }`}
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <MenuIcon className="w-6 h-6" />}
